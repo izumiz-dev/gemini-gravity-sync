@@ -41,18 +41,25 @@
 
 ツールをグローバルにインストールして、どのディレクトリからでも使えるようにします。
 
-1. リポジトリをクローンして依存関係をインストール:
-   ```bash
-   git clone <repository-url>
-   cd gemini-gravity-sync
-   pnpm install
-   ```
+```bash
+git clone git@github.com:izumiz-dev/gemini-gravity-sync.git && \
+cd gemini-gravity-sync && \
+pnpm install && \
+pnpm build && \
+pnpm link --global
+```
 
-2. ビルドしてグローバルにリンク:
-   ```bash
-   pnpm build
-   pnpm link --global
-   ```
+<details>
+<summary><strong>npm</strong> を使用する場合</summary>
+
+```bash
+git clone git@github.com:izumiz-dev/gemini-gravity-sync.git && \
+cd gemini-gravity-sync && \
+npm install && \
+npm run build && \
+npm link
+```
+</details>
 
 ### 使い方
 

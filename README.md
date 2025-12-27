@@ -41,18 +41,25 @@ A real-time bidirectional synchronization tool between **Gemini CLI** (TOML) and
 
 To install the tool globally so you can use it from any directory:
 
-1. Clone and install dependencies:
-   ```bash
-   git clone <repository-url>
-   cd gemini-gravity-sync
-   pnpm install
-   ```
+```bash
+git clone git@github.com:izumiz-dev/gemini-gravity-sync.git && \
+cd gemini-gravity-sync && \
+pnpm install && \
+pnpm build && \
+pnpm link --global
+```
 
-2. Build and link globally:
-   ```bash
-   pnpm build
-   pnpm link --global
-   ```
+<details>
+<summary>Using <strong>npm</strong> instead?</summary>
+
+```bash
+git clone git@github.com:izumiz-dev/gemini-gravity-sync.git && \
+cd gemini-gravity-sync && \
+npm install && \
+npm run build && \
+npm link
+```
+</details>
 
 ### Usage
 
