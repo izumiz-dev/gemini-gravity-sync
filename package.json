@@ -1,7 +1,7 @@
 {
   "name": "gemini-gravity-sync",
   "version": "1.0.0",
-  "description": "",
+  "description": "A real-time bidirectional synchronization tool between Gemini CLI (TOML) and Antigravity (Markdown) configuration files.",
   "main": "index.js",
   "type": "module",
   "bin": {
@@ -10,10 +10,10 @@
   "scripts": {
     "dev": "ts-node src/cli.tsx",
     "build": "tsc",
-    "test": "pnpm dlx vitest run"
+    "test": "vitest run"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gemini-Antigravity Sync CLI Contributors",
   "license": "MIT",
   "packageManager": "pnpm@10.26.2",
   "dependencies": {
